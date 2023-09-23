@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text Converter</title>
+    <link rel="stylesheet" href="voice style.css">
+    <link rel="icon" href="speech title img.png">
+    <link rel="microphone" href="mic.jpg">
+</head>
+<body>
+    <div class="speech_to_text">
+        <h1>Speech to Text Converter</h1>
+        <div class="microphone-icon" id="microphone"></div>
+        <img src="speech img.png"></img>
+<select id="language-selector">
+    <option value="en-US">English (United States)</option>
+    <option value="es-ES">Spanish (Spain)</option>
+    <option value="fr-FR">French (France)</option>
+    <option value="de-DE">German (Germany)</option>
+</select>
+        <textarea id="convert_text"></textarea>
+        <button id="start">Start Recording</button>
+        <button id="stop">Stop Recording</button>
+        <div id="result"></div>
+        <button id="download">Download as PDF</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="voice script.js"></script>
+</body>
+</html>
